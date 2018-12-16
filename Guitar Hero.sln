@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2017
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero", "Guitar Hero.csproj", "{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero", "Guitar Hero.csproj", "{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero.Editor", "Guitar Hero.Editor.csproj", "{42196CC7-07C9-E0C9-B475-7D16C8115FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero.Editor", "Guitar Hero.Editor.csproj", "{42196CC7-07C9-E0C9-B475-7D16C8115FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero.Editor", "Guitar Hero.Editor.csproj", "{42196CC7-07C9-E0C9-B475-7D16C8115FA6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Guitar Hero.Editor", "Guitar Hero.Editor.csproj", "{42196CC7-07C9-E0C9-B475-7D16C8115FA6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBE45F67-0CB5-C1F2-D18C-0B5DECE48A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{42196CC7-07C9-E0C9-B475-7D16C8115FA6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

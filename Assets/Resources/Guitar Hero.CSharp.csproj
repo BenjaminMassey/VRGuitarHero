@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{63BBF902-AEF8-F2C1-B071-5E7FA7C1D9B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
+    <CompilerResponseFile></CompilerResponseFile>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
+    <UnityVersion>5.3.4f1</UnityVersion>
+    <RootNamespace></RootNamespace>
+    <LangVersion Condition=" '$(VisualStudioVersion)' != '10.0' ">4</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Debug\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Debug\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>DEBUG;TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\UnityVS_bin\Release\</OutputPath>
+    <IntermediateOutputPath>Temp\UnityVS_obj\Release\</IntermediateOutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DefineConstants>TRACE;UNITY_5_3_OR_NEWER;UNITY_5_3_4;UNITY_5_3;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITERENDERER_FLIPPING;ENABLE_SPRITES;ENABLE_SPRITE_POLYGON;ENABLE_TERRAIN;ENABLE_RAKNET;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_HUB;ENABLE_CLOUD_PROJECT_ID;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_METRICS;ENABLE_EDITOR_METRICS_CACHING;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION;ENABLE_EDITOR_TESTS_RUNNER;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_LOG_MIXED_STACKTRACE;ENABLE_UNITYWEBREQUEST;ENABLE_EVENT_QUEUE;ENABLE_CLUSTERINPUT;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.XML" />
+    <Reference Include="System.Core" />
+    <Reference Include="Boo.Lang" />
+    <Reference Include="UnityScript.Lang" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="UnityEngine">
+      <HintPath>Library\UnityAssemblies\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\UnityAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Networking">
+      <HintPath>Library\UnityAssemblies\UnityEngine.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>Library\UnityAssemblies\UnityEditor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\DifficultySelector.cs" />
+    <Compile Include="Assets\FluorescentAdolescent.cs" />
+    <Compile Include="Assets\MainMenu.cs" />
+    <Compile Include="Assets\NewNoteControl.cs" />
+    <Compile Include="Assets\NewNoteReceiver.cs" />
+    <Compile Include="Assets\Note1Control.cs" />
+    <Compile Include="Assets\Note2Control.cs" />
+    <Compile Include="Assets\Note3Control.cs" />
+    <Compile Include="Assets\NoteControl.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRDebugHeadController.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVROverlay.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRPlatformMenu.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRTouchpad.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\OVRVolumeControl.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRChromaticAberration.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRDebugGraph.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRInputControl.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRModeParms.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRMonoscopic.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRResetOrientation.cs" />
+    <Compile Include="Assets\OVR\Moonlight\Scripts\Utils\OVRWaitCursor.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRDisplay.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRInput.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRManager.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVROnCompleteListener.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRPlugin.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRProfile.cs" />
+    <Compile Include="Assets\OVR\Scripts\OVRTracker.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRDebugInfo.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGamepadController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRGridCube.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRPlayerController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRSceneSampleController.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRScreenFade.cs" />
+    <Compile Include="Assets\OVR\Scripts\Util\OVRTrackerBounds.cs" />
+    <Compile Include="Assets\SongControl.cs" />
+    <Compile Include="Assets\SongSelector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\OVR\Moonlight\Resources\Unlit Transparent Color.shader" />
+    <None Include="Assets\OVR\Moonlight\Shaders\OVRColorRampAlpha.shader" />
+    <None Include="Assets\OVR\Moonlight\Shaders\Unlit Crosshair.shader" />
+    <None Include="Assets\SongTextFiles\ace-of-spades-1.txt" />
+    <None Include="Assets\SongTextFiles\ace-of-spades-2.txt" />
+    <None Include="Assets\SongTextFiles\ace-of-spades-3.txt" />
+    <None Include="Assets\SongTextFiles\ace-of-spades-4.txt" />
+    <None Include="Assets\SongTextFiles\all-of-this-1.txt" />
+    <None Include="Assets\SongTextFiles\all-of-this-2.txt" />
+    <None Include="Assets\SongTextFiles\all-of-this-3.txt" />
+    <None Include="Assets\SongTextFiles\all-of-this-4.txt" />
+    <None Include="Assets\SongTextFiles\arterial-black-1.txt" />
+    <None Include="Assets\SongTextFiles\arterial-black-2.txt" />
+    <None Include="Assets\SongTextFiles\arterial-black-3.txt" />
+    <None Include="Assets\SongTextFiles\arterial-black-4.txt" />
+    <None Include="Assets\SongTextFiles\bad-reputation-1.txt" />
+    <None Include="Assets\SongTextFiles\bad-reputation-2.txt" />
+    <None Include="Assets\SongTextFiles\bad-reputation-3.txt" />
+    <None Include="Assets\SongTextFiles\bad-reputation-4.txt" />
+    <None Include="Assets\SongTextFiles\bark-at-the-moon-1.txt" />
+    <None Include="Assets\SongTextFiles\bark-at-the-moon-2.txt" />
+    <None Include="Assets\SongTextFiles\bark-at-the-moon-3.txt" />
+    <None Include="Assets\SongTextFiles\bark-at-the-moon-4.txt" />
+    <None Include="Assets\SongTextFiles\beast-and-the-harlot-1.txt" />
+    <None Include="Assets\SongTextFiles\beast-and-the-harlot-2.txt" />
+    <None Include="Assets\SongTextFiles\beast-and-the-harlot-3.txt" />
+    <None Include="Assets\SongTextFiles\beast-and-the-harlot-4.txt" />
+    <None Include="Assets\SongTextFiles\behind-the-mask-1.txt" />
+    <None Include="Assets\SongTextFiles\behind-the-mask-2.txt" />
+    <None Include="Assets\SongTextFiles\behind-the-mask-3.txt" />
+    <None Include="Assets\SongTextFiles\behind-the-mask-4.txt" />
+    <None Include="Assets\SongTextFiles\callout-1.txt" />
+    <None Include="Assets\SongTextFiles\callout-2.txt" />
+    <None Include="Assets\SongTextFiles\callout-3.txt" />
+    <None Include="Assets\SongTextFiles\callout-4.txt" />
+    <None Include="Assets\SongTextFiles\cant-you-hear-me-knockin-1.txt" />
+    <None Include="Assets\SongTextFiles\cant-you-hear-me-knockin-2.txt" />
+    <None Include="Assets\SongTextFiles\cant-you-hear-me-knockin-3.txt" />
+    <None Include="Assets\SongTextFiles\cant-you-hear-me-knockin-4.txt" />
+    <None Include="Assets\SongTextFiles\carry-me-home-1.txt" />
+    <None Include="Assets\SongTextFiles\carry-me-home-2.txt" />
+    <None Include="Assets\SongTextFiles\carry-me-home-3.txt" />
+    <None Include="Assets\SongTextFiles\carry-me-home-4.txt" />
+    <None Include="Assets\SongTextFiles\carry-on-wayward-son-1.txt" />
+    <None Include="Assets\SongTextFiles\carry-on-wayward-son-2.txt" />
+    <None Include="Assets\SongTextFiles\carry-on-wayward-son-3.txt" />
+    <None Include="Assets\SongTextFiles\carry-on-wayward-son-4.txt" />
+    <None Include="Assets\SongTextFiles\caveman-rejoice-1.txt" />
+    <None Include="Assets\SongTextFiles\caveman-rejoice-2.txt" />
+    <None Include="Assets\SongTextFiles\caveman-rejoice-3.txt" />
+    <None Include="Assets\SongTextFiles\caveman-rejoice-4.txt" />
+    <None Include="Assets\SongTextFiles\cheat-on-the-church-1.txt" />
+    <None Include="Assets\SongTextFiles\cheat-on-the-church-2.txt" />
+    <None Include="Assets\SongTextFiles\cheat-on-the-church-3.txt" />
+    <None Include="Assets\SongTextFiles\cheat-on-the-church-4.txt" />
+    <None Include="Assets\SongTextFiles\cherry-pie-1.txt" />
+    <None Include="Assets\SongTextFiles\cherry-pie-2.txt" />
+    <None Include="Assets\SongTextFiles\cherry-pie-3.txt" />
+    <None Include="Assets\SongTextFiles\cherry-pie-4.txt" />
+    <None Include="Assets\SongTextFiles\cochise-1.txt" />
+    <None Include="Assets\SongTextFiles\cochise-2.txt" />
+    <None Include="Assets\SongTextFiles\cochise-3.txt" />
+    <None Include="Assets\SongTextFiles\cochise-4.txt" />
+    <None Include="Assets\SongTextFiles\collide-1.txt" />
+    <None Include="Assets\SongTextFiles\collide-2.txt" />
+    <None Include="Assets\SongTextFiles\collide-3.txt" />
+    <None Include="Assets\SongTextFiles\collide-4.txt" />
+    <None Include="Assets\SongTextFiles\cowboys-from-hell-1.txt" />
+    <None Include="Assets\SongTextFiles\cowboys-from-hell-2.txt" />
+    <None Include="Assets\SongTextFiles\cowboys-from-hell-3.txt" />
+    <None Include="Assets\SongTextFiles\cowboys-from-hell-4.txt" />
+    <None Include="Assets\SongTextFiles\crazy-on-you-1.txt" />
+    <None Include="Assets\SongTextFiles\crazy-on-you-2.txt" />
+    <None Include="Assets\SongTextFiles\crazy-on-you-3.txt" />
+    <None Include="Assets\SongTextFiles\crazy-on-you-4.txt" />
+    <None Include="Assets\SongTextFiles\crossroads-1.txt" />
+    <None Include="Assets\SongTextFiles\crossroads-2.txt" />
+    <None Include="Assets\SongTextFiles\crossroads-3.txt" />
+    <None Include="Assets\SongTextFiles\crossroads-4.txt" />
+    <None Include="Assets\SongTextFiles\decontrol-1.txt" />
+    <None Include="Assets\SongTextFiles\decontrol-2.txt" />
+    <None Include="Assets\SongTextFiles\decontrol-3.txt" />
+    <None Include="Assets\SongTextFiles\decontrol-4.txt" />
+    <None Include="Assets\SongTextFiles\elephant-bones-1.txt" />
+    <None Include="Assets\SongTextFiles\elephant-bones-2.txt" />
+    <None Include="Assets\SongTextFiles\elephant-bones-3.txt" />
+    <None Include="Assets\SongTextFiles\elephant-bones-4.txt" />
+    <None Include="Assets\SongTextFiles\eureka-i-ve-found-love-1.txt" />
+    <None Include="Assets\SongTextFiles\eureka-i-ve-found-love-2.txt" />
+    <None Include="Assets\SongTextFiles\eureka-i-ve-found-love-3.txt" />
+    <None Include="Assets\SongTextFiles\eureka-i-ve-found-love-4.txt" />
+    <None Include="Assets\SongTextFiles\even-rats-1.txt" />
+    <None Include="Assets\SongTextFiles\even-rats-2.txt" />
+    <None Include="Assets\SongTextFiles\even-rats-3.txt" />
+    <None Include="Assets\SongTextFiles\even-rats-4.txt" />
+    <None Include="Assets\SongTextFiles\fall-of-pangea-1.txt" />
+    <None Include="Assets\SongTextFiles\fall-of-pangea-2.txt" />
+    <None Include="Assets\SongTextFiles\fall-of-pangea-3.txt" />
+    <None Include="Assets\SongTextFiles\fall-of-pangea-4.txt" />
+    <None Include="Assets\SongTextFiles\farewell-myth-1.txt" />
+    <None Include="Assets\SongTextFiles\farewell-myth-2.txt" />
+    <None Include="Assets\SongTextFiles\farewell-myth-3.txt" />
+    <None Include="Assets\SongTextFiles\farewell-myth-4.txt" />
+    <None Include="Assets\SongTextFiles\fat-lip-1.txt" />
+    <None Include="Assets\SongTextFiles\fat-lip-2.txt" />
+    <None Include="Assets\SongTextFiles\fat-lip-3.txt" />
+    <None Include="Assets\SongTextFiles\fat-lip-4.txt" />
+    <None Include="Assets\SongTextFiles\fire-it-up-1.txt" />
+    <None Include="Assets\SongTextFiles\fire-it-up-2.txt" />
+    <None Include="Assets\SongTextFiles\fire-it-up-3.txt" />
+    <None Include="Assets\SongTextFiles\fire-it-up-4.txt" />
+    <None Include="Assets\SongTextFiles\fly-on-the-wall-1.txt" />
+    <None Include="Assets\SongTextFiles\fly-on-the-wall-2.txt" />
+    <None Include="Assets\SongTextFiles\fly-on-the-wall-3.txt" />
+    <None Include="Assets\SongTextFiles\fly-on-the-wall-4.txt" />
+    <None Include="Assets\SongTextFiles\frankenstein-1.txt" />
+    <None Include="Assets\SongTextFiles\frankenstein-2.txt" />
+    <None Include="Assets\SongTextFiles\frankenstein-3.txt" />
+    <None Include="Assets\SongTextFiles\frankenstein-4.txt" />
+    <None Include="Assets\SongTextFiles\freebird-1.txt" />
+    <None Include="Assets\SongTextFiles\freebird-2.txt" />
+    <None Include="Assets\SongTextFiles\freebird-3.txt" />
+    <None Include="Assets\SongTextFiles\freebird-4.txt" />
+    <None Include="Assets\SongTextFiles\freya-1.txt" />
+    <None Include="Assets\SongTextFiles\freya-2.txt" />
+    <None Include="Assets\SongTextFiles\freya-3.txt" />
+    <None Include="Assets\SongTextFiles\freya-4.txt" />
+    <None Include="Assets\SongTextFiles\ftk-1.txt" />
+    <None Include="Assets\SongTextFiles\ftk-2.txt" />
+    <None Include="Assets\SongTextFiles\ftk-3.txt" />
+    <None Include="Assets\SongTextFiles\ftk-4.txt" />
+    <None Include="Assets\SongTextFiles\gemini-1.txt" />
+    <None Include="Assets\SongTextFiles\gemini-2.txt" />
+    <None Include="Assets\SongTextFiles\gemini-3.txt" />
+    <None Include="Assets\SongTextFiles\gemini-4.txt" />
+    <None Include="Assets\SongTextFiles\get-ready-2-rokk-1.txt" />
+    <None Include="Assets\SongTextFiles\get-ready-2-rokk-2.txt" />
+    <None Include="Assets\SongTextFiles\get-ready-2-rokk-3.txt" />
+    <None Include="Assets\SongTextFiles\get-ready-2-rokk-4.txt" />
+    <None Include="Assets\SongTextFiles\girlfriend-1.txt" />
+    <None Include="Assets\SongTextFiles\girlfriend-2.txt" />
+    <None Include="Assets\SongTextFiles\girlfriend-3.txt" />
+    <None Include="Assets\SongTextFiles\girlfriend-4.txt" />
+    <None Include="Assets\SongTextFiles\godzilla-1.txt" />
+    <None Include="Assets\SongTextFiles\godzilla-2.txt" />
+    <None Include="Assets\SongTextFiles\godzilla-3.txt" />
+    <None Include="Assets\SongTextFiles\godzilla-4.txt" />
+    <None Include="Assets\SongTextFiles\graveyard-shift-1.txt" />
+    <None Include="Assets\SongTextFiles\graveyard-shift-2.txt" />
+    <None Include="Assets\SongTextFiles\graveyard-shift-3.txt" />
+    <None Include="Assets\SongTextFiles\graveyard-shift-4.txt" />
+    <None Include="Assets\SongTextFiles\guitar-hero-1.txt" />
+    <None Include="Assets\SongTextFiles\guitar-hero-2.txt" />
+    <None Include="Assets\SongTextFiles\guitar-hero-3.txt" />
+    <None Include="Assets\SongTextFiles\guitar-hero-4.txt" />
+    <None Include="Assets\SongTextFiles\hangar-18-1.txt" />
+    <None Include="Assets\SongTextFiles\hangar-18-2.txt" />
+    <None Include="Assets\SongTextFiles\hangar-18-3.txt" />
+    <None Include="Assets\SongTextFiles\hangar-18-4.txt" />
+    <None Include="Assets\SongTextFiles\heart-full-of-black-1.txt" />
+    <None Include="Assets\SongTextFiles\heart-full-of-black-2.txt" />
+    <None Include="Assets\SongTextFiles\heart-full-of-black-3.txt" />
+    <None Include="Assets\SongTextFiles\heart-full-of-black-4.txt" />
+    <None Include="Assets\SongTextFiles\heart-shaped-box-1.txt" />
+    <None Include="Assets\SongTextFiles\heart-shaped-box-2.txt" />
+    <None Include="Assets\SongTextFiles\heart-shaped-box-3.txt" />
+    <None Include="Assets\SongTextFiles\heart-shaped-box-4.txt" />
+    <None Include="Assets\SongTextFiles\hey-1.txt" />
+    <None Include="Assets\SongTextFiles\hey-2.txt" />
+    <None Include="Assets\SongTextFiles\hey-3.txt" />
+    <None Include="Assets\SongTextFiles\hey-4.txt" />
+    <None Include="Assets\SongTextFiles\hey-you-1.txt" />
+    <None Include="Assets\SongTextFiles\hey-you-2.txt" />
+    <None Include="Assets\SongTextFiles\hey-you-3.txt" />
+    <None Include="Assets\SongTextFiles\hey-you-4.txt" />
+    <None Include="Assets\SongTextFiles\higher-ground-1.txt" />
+    <None Include="Assets\SongTextFiles\higher-ground-2.txt" />
+    <None Include="Assets\SongTextFiles\higher-ground-3.txt" />
+    <None Include="Assets\SongTextFiles\higher-ground-4.txt" />
+    <None Include="Assets\SongTextFiles\i-love-rock-and-roll-1.txt" />
+    <None Include="Assets\SongTextFiles\i-love-rock-and-roll-2.txt" />
+    <None Include="Assets\SongTextFiles\i-love-rock-and-roll-3.txt" />
+    <None Include="Assets\SongTextFiles\i-love-rock-and-roll-4.txt" />
+    <None Include="Assets\SongTextFiles\i-wanna-be-sedated-1.txt" />
+    <None Include="Assets\SongTextFiles\i-wanna-be-sedated-2.txt" />
+    <None Include="Assets\SongTextFiles\i-wanna-be-sedated-3.txt" />
+    <None Include="Assets\SongTextFiles\i-wanna-be-sedated-4.txt" />
+    <None Include="Assets\SongTextFiles\infected-1.txt" />
+    <None Include="Assets\SongTextFiles\infected-2.txt" />
+    <None Include="Assets\SongTextFiles\infected-3.txt" />
+    <None Include="Assets\SongTextFiles\infected-4.txt" />
+    <None Include="Assets\SongTextFiles\institutionalized-1.txt" />
+    <None Include="Assets\SongTextFiles\institutionalized-2.txt" />
+    <None Include="Assets\SongTextFiles\institutionalized-3.txt" />
+    <None Include="Assets\SongTextFiles\institutionalized-4.txt" />
+    <None Include="Assets\SongTextFiles\iron-man-1.txt" />
+    <None Include="Assets\SongTextFiles\iron-man-2.txt" />
+    <None Include="Assets\SongTextFiles\iron-man-3.txt" />
+    <None Include="Assets\SongTextFiles\iron-man-4.txt" />
+    <None Include="Assets\SongTextFiles\jessica-1.txt" />
+    <None Include="Assets\SongTextFiles\jessica-2.txt" />
+    <None Include="Assets\SongTextFiles\jessica-3.txt" />
+    <None Include="Assets\SongTextFiles\jessica-4.txt" />
+    <None Include="Assets\SongTextFiles\john-the-fisherman-1.txt" />
+    <None Include="Assets\SongTextFiles\john-the-fisherman-2.txt" />
+    <None Include="Assets\SongTextFiles\john-the-fisherman-3.txt" />
+    <None Include="Assets\SongTextFiles\john-the-fisherman-4.txt" />
+    <None Include="Assets\SongTextFiles\jordan-1.txt" />
+    <None Include="Assets\SongTextFiles\jordan-2.txt" />
+    <None Include="Assets\SongTextFiles\jordan-3.txt" />
+    <None Include="Assets\SongTextFiles\jordan-4.txt" />
+    <None Include="Assets\SongTextFiles\killer-queen-1.txt" />
+    <None Include="Assets\SongTextFiles\killer-queen-2.txt" />
+    <None Include="Assets\SongTextFiles\killer-queen-3.txt" />
+    <None Include="Assets\SongTextFiles\killer-queen-4.txt" />
+    <None Include="Assets\SongTextFiles\killing-in-the-name-1.txt" />
+    <None Include="Assets\SongTextFiles\killing-in-the-name-2.txt" />
+    <None Include="Assets\SongTextFiles\killing-in-the-name-3.txt" />
+    <None Include="Assets\SongTextFiles\killing-in-the-name-4.txt" />
+    <None Include="Assets\SongTextFiles\laid-to-rest-1.txt" />
+    <None Include="Assets\SongTextFiles\laid-to-rest-2.txt" />
+    <None Include="Assets\SongTextFiles\laid-to-rest-3.txt" />
+    <None Include="Assets\SongTextFiles\laid-to-rest-4.txt" />
+    <None Include="Assets\SongTextFiles\last-child-1.txt" />
+    <None Include="Assets\SongTextFiles\last-child-2.txt" />
+    <None Include="Assets\SongTextFiles\last-child-3.txt" />
+    <None Include="Assets\SongTextFiles\last-child-4.txt" />
+    <None Include="Assets\SongTextFiles\laughtrack-1.txt" />
+    <None Include="Assets\SongTextFiles\laughtrack-2.txt" />
+    <None Include="Assets\SongTextFiles\laughtrack-3.txt" />
+    <None Include="Assets\SongTextFiles\laughtrack-4.txt" />
+    <None Include="Assets\SongTextFiles\less-talk-more-rokk-1.txt" />
+    <None Include="Assets\SongTextFiles\less-talk-more-rokk-2.txt" />
+    <None Include="Assets\SongTextFiles\less-talk-more-rokk-3.txt" />
+    <None Include="Assets\SongTextFiles\less-talk-more-rokk-4.txt" />
+    <None Include="Assets\SongTextFiles\madhouse-1.txt" />
+    <None Include="Assets\SongTextFiles\madhouse-2.txt" />
+    <None Include="Assets\SongTextFiles\madhouse-3.txt" />
+    <None Include="Assets\SongTextFiles\madhouse-4.txt" />
+    <None Include="Assets\SongTextFiles\message-in-a-bottle-1.txt" />
+    <None Include="Assets\SongTextFiles\message-in-a-bottle-2.txt" />
+    <None Include="Assets\SongTextFiles\message-in-a-bottle-3.txt" />
+    <None Include="Assets\SongTextFiles\message-in-a-bottle-4.txt" />
+    <None Include="Assets\SongTextFiles\misirlou-1.txt" />
+    <None Include="Assets\SongTextFiles\misirlou-2.txt" />
+    <None Include="Assets\SongTextFiles\misirlou-3.txt" />
+    <None Include="Assets\SongTextFiles\misirlou-4.txt" />
+    <None Include="Assets\SongTextFiles\monkey-wrench-1.txt" />
+    <None Include="Assets\SongTextFiles\monkey-wrench-2.txt" />
+    <None Include="Assets\SongTextFiles\monkey-wrench-3.txt" />
+    <None Include="Assets\SongTextFiles\monkey-wrench-4.txt" />
+    <None Include="Assets\SongTextFiles\more-than-a-feeling-1.txt" />
+    <None Include="Assets\SongTextFiles\more-than-a-feeling-2.txt" />
+    <None Include="Assets\SongTextFiles\more-than-a-feeling-3.txt" />
+    <None Include="Assets\SongTextFiles\more-than-a-feeling-4.txt" />
+    <None Include="Assets\SongTextFiles\mother-1.txt" />
+    <None Include="Assets\SongTextFiles\mother-2.txt" />
+    <None Include="Assets\SongTextFiles\mother-3.txt" />
+    <None Include="Assets\SongTextFiles\mother-4.txt" />
+    <None Include="Assets\SongTextFiles\mr-fix-it-1.txt" />
+    <None Include="Assets\SongTextFiles\mr-fix-it-2.txt" />
+    <None Include="Assets\SongTextFiles\mr-fix-it-3.txt" />
+    <None Include="Assets\SongTextFiles\mr-fix-it-4.txt" />
+    <None Include="Assets\SongTextFiles\no-one-knows-1.txt" />
+    <None Include="Assets\SongTextFiles\no-one-knows-2.txt" />
+    <None Include="Assets\SongTextFiles\no-one-knows-3.txt" />
+    <None Include="Assets\SongTextFiles\no-one-knows-4.txt" />
+    <None Include="Assets\SongTextFiles\one-for-the-road-1.txt" />
+    <None Include="Assets\SongTextFiles\one-for-the-road-2.txt" />
+    <None Include="Assets\SongTextFiles\one-for-the-road-3.txt" />
+    <None Include="Assets\SongTextFiles\one-for-the-road-4.txt" />
+    <None Include="Assets\SongTextFiles\parasite-1.txt" />
+    <None Include="Assets\SongTextFiles\parasite-2.txt" />
+    <None Include="Assets\SongTextFiles\parasite-3.txt" />
+    <None Include="Assets\SongTextFiles\parasite-4.txt" />
+    <None Include="Assets\SongTextFiles\psychobilly-freakout-1.txt" />
+    <None Include="Assets\SongTextFiles\psychobilly-freakout-2.txt" />
+    <None Include="Assets\SongTextFiles\psychobilly-freakout-3.txt" />
+    <None Include="Assets\SongTextFiles\psychobilly-freakout-4.txt" />
+    <None Include="Assets\SongTextFiles\push-push-lady-lightning-1.txt" />
+    <None Include="Assets\SongTextFiles\push-push-lady-lightning-2.txt" />
+    <None Include="Assets\SongTextFiles\push-push-lady-lightning-3.txt" />
+    <None Include="Assets\SongTextFiles\push-push-lady-lightning-4.txt" />
+    <None Include="Assets\SongTextFiles\radium-eyes-1.txt" />
+    <None Include="Assets\SongTextFiles\radium-eyes-2.txt" />
+    <None Include="Assets\SongTextFiles\radium-eyes-3.txt" />
+    <None Include="Assets\SongTextFiles\radium-eyes-4.txt" />
+    <None Include="Assets\SongTextFiles\raw-dog-1.txt" />
+    <None Include="Assets\SongTextFiles\raw-dog-2.txt" />
+    <None Include="Assets\SongTextFiles\raw-dog-3.txt" />
+    <None Include="Assets\SongTextFiles\raw-dog-4.txt" />
+    <None Include="Assets\SongTextFiles\red-lottery-1.txt" />
+    <None Include="Assets\SongTextFiles\red-lottery-2.txt" />
+    <None Include="Assets\SongTextFiles\red-lottery-3.txt" />
+    <None Include="Assets\SongTextFiles\red-lottery-4.txt" />
+    <None Include="Assets\SongTextFiles\rock-this-town-1.txt" />
+    <None Include="Assets\SongTextFiles\rock-this-town-2.txt" />
+    <None Include="Assets\SongTextFiles\rock-this-town-3.txt" />
+    <None Include="Assets\SongTextFiles\rock-this-town-4.txt" />
+    <None Include="Assets\SongTextFiles\sail-your-ship-by-1.txt" />
+    <None Include="Assets\SongTextFiles\sail-your-ship-by-2.txt" />
+    <None Include="Assets\SongTextFiles\sail-your-ship-by-3.txt" />
+    <None Include="Assets\SongTextFiles\sail-your-ship-by-4.txt" />
+    <None Include="Assets\SongTextFiles\search-and-destroy-1.txt" />
+    <None Include="Assets\SongTextFiles\search-and-destroy-2.txt" />
+    <None Include="Assets\SongTextFiles\search-and-destroy-3.txt" />
+    <None Include="Assets\SongTextFiles\search-and-destroy-4.txt" />
+    <None Include="Assets\SongTextFiles\sharp-dressed-man-1.txt" />
+    <None Include="Assets\SongTextFiles\sharp-dressed-man-2.txt" />
+    <None Include="Assets\SongTextFiles\sharp-dressed-man-3.txt" />
+    <None Include="Assets\SongTextFiles\sharp-dressed-man-4.txt" />
+    <None Include="Assets\SongTextFiles\shout-at-the-devil-1.txt" />
+    <None Include="Assets\SongTextFiles\shout-at-the-devil-2.txt" />
+    <None Include="Assets\SongTextFiles\shout-at-the-devil-3.txt" />
+    <None Include="Assets\SongTextFiles\shout-at-the-devil-4.txt" />
+    <None Include="Assets\SongTextFiles\six-1.txt" />
+    <None Include="Assets\SongTextFiles\six-2.txt" />
+    <None Include="Assets\SongTextFiles\six-3.txt" />
+    <None Include="Assets\SongTextFiles\six-4.txt" />
+    <None Include="Assets\SongTextFiles\smoke-on-the-water-1.txt" />
+    <None Include="Assets\SongTextFiles\smoke-on-the-water-2.txt" />
+    <None Include="Assets\SongTextFiles\smoke-on-the-water-3.txt" />
+    <None Include="Assets\SongTextFiles\smoke-on-the-water-4.txt" />
+    <None Include="Assets\SongTextFiles\soy-bomb-1.txt" />
+    <None Include="Assets\SongTextFiles\soy-bomb-2.txt" />
+    <None Include="Assets\SongTextFiles\soy-bomb-3.txt" />
+    <None Include="Assets\SongTextFiles\soy-bomb-4.txt" />
+    <None Include="Assets\SongTextFiles\spanish-castle-magic-1.txt" />
+    <None Include="Assets\SongTextFiles\spanish-castle-magic-2.txt" />
+    <None Include="Assets\SongTextFiles\spanish-castle-magic-3.txt" />
+    <None Include="Assets\SongTextFiles\spanish-castle-magic-4.txt" />
+    <None Include="Assets\SongTextFiles\stellar-1.txt" />
+    <None Include="Assets\SongTextFiles\stellar-2.txt" />
+    <None Include="Assets\SongTextFiles\stellar-3.txt" />
+    <None Include="Assets\SongTextFiles\stellar-4.txt" />
+    <None Include="Assets\SongTextFiles\stop-1.txt" />
+    <None Include="Assets\SongTextFiles\stop-2.txt" />
+    <None Include="Assets\SongTextFiles\stop-3.txt" />
+    <None Include="Assets\SongTextFiles\stop-4.txt" />
+    <None Include="Assets\SongTextFiles\story-of-my-love-1.txt" />
+    <None Include="Assets\SongTextFiles\story-of-my-love-2.txt" />
+    <None Include="Assets\SongTextFiles\story-of-my-love-3.txt" />
+    <None Include="Assets\SongTextFiles\story-of-my-love-4.txt" />
+    <None Include="Assets\SongTextFiles\strutter-1.txt" />
+    <None Include="Assets\SongTextFiles\strutter-2.txt" />
+    <None Include="Assets\SongTextFiles\strutter-3.txt" />
+    <None Include="Assets\SongTextFiles\strutter-4.txt" />
+    <None Include="Assets\SongTextFiles\surrender-1.txt" />
+    <None Include="Assets\SongTextFiles\surrender-2.txt" />
+    <None Include="Assets\SongTextFiles\surrender-3.txt" />
+    <None Include="Assets\SongTextFiles\surrender-4.txt" />
+    <None Include="Assets\SongTextFiles\sweet-child-of-mine-1.txt" />
+    <None Include="Assets\SongTextFiles\sweet-child-of-mine-2.txt" />
+    <None Include="Assets\SongTextFiles\sweet-child-of-mine-3.txt" />
+    <None Include="Assets\SongTextFiles\sweet-child-of-mine-4.txt" />
+    <None Include="Assets\SongTextFiles\symphony-of-destruction-1.txt" />
+    <None Include="Assets\SongTextFiles\symphony-of-destruction-2.txt" />
+    <None Include="Assets\SongTextFiles\symphony-of-destruction-3.txt" />
+    <None Include="Assets\SongTextFiles\symphony-of-destruction-4.txt" />
+    <None Include="Assets\SongTextFiles\take-it-off-1.txt" />
+    <None Include="Assets\SongTextFiles\take-it-off-2.txt" />
+    <None Include="Assets\SongTextFiles\take-it-off-3.txt" />
+    <None Include="Assets\SongTextFiles\take-it-off-4.txt" />
+    <None Include="Assets\SongTextFiles\take-me-out-1.txt" />
+    <None Include="Assets\SongTextFiles\take-me-out-2.txt" />
+    <None Include="Assets\SongTextFiles\take-me-out-3.txt" />
+    <None Include="Assets\SongTextFiles\take-me-out-4.txt" />
+    <None Include="Assets\SongTextFiles\tattooed-love-boys-1.txt" />
+    <None Include="Assets\SongTextFiles\tattooed-love-boys-2.txt" />
+    <None Include="Assets\SongTextFiles\tattooed-love-boys-3.txt" />
+    <None Include="Assets\SongTextFiles\tattooed-love-boys-4.txt" />
+    <None Include="Assets\SongTextFiles\texas-flood-1.txt" />
+    <None Include="Assets\SongTextFiles\texas-flood-2.txt" />
+    <None Include="Assets\SongTextFiles\texas-flood-3.txt" />
+    <None Include="Assets\SongTextFiles\texas-flood-4.txt" />
+    <None Include="Assets\SongTextFiles\the-breaking-wheel-1.txt" />
+    <None Include="Assets\SongTextFiles\the-breaking-wheel-2.txt" />
+    <None Include="Assets\SongTextFiles\the-breaking-wheel-3.txt" />
+    <None Include="Assets\SongTextFiles\the-breaking-wheel-4.txt" />
+    <None Include="Assets\SongTextFiles\the-light-that-blinds-1.txt" />
+    <None Include="Assets\SongTextFiles\the-light-that-blinds-2.txt" />
+    <None Include="Assets\SongTextFiles\the-light-that-blinds-3.txt" />
+    <None Include="Assets\SongTextFiles\the-light-that-blinds-4.txt" />
+    <None Include="Assets\SongTextFiles\the-new-black-1.txt" />
+    <None Include="Assets\SongTextFiles\the-new-black-2.txt" />
+    <None Include="Assets\SongTextFiles\the-new-black-3.txt" />
+    <None Include="Assets\SongTextFiles\the-new-black-4.txt" />
+    <None Include="Assets\SongTextFiles\them-bones-1.txt" />
+    <None Include="Assets\SongTextFiles\them-bones-2.txt" />
+    <None Include="Assets\SongTextFiles\them-bones-3.txt" />
+    <None Include="Assets\SongTextFiles\them-bones-4.txt" />
+    <None Include="Assets\SongTextFiles\thunder-horse-1.txt" />
+    <None Include="Assets\SongTextFiles\thunder-horse-2.txt" />
+    <None Include="Assets\SongTextFiles\thunder-horse-3.txt" />
+    <None Include="Assets\SongTextFiles\thunder-horse-4.txt" />
+    <None Include="Assets\SongTextFiles\thunder-kiss-65-1.txt" />
+    <None Include="Assets\SongTextFiles\thunder-kiss-65-2.txt" />
+    <None Include="Assets\SongTextFiles\thunder-kiss-65-3.txt" />
+    <None Include="Assets\SongTextFiles\thunder-kiss-65-4.txt" />
+    <None Include="Assets\SongTextFiles\tonight-im-gonna-rock-you-tonight-1.txt" />
+    <None Include="Assets\SongTextFiles\tonight-im-gonna-rock-you-tonight-2.txt" />
+    <None Include="Assets\SongTextFiles\tonight-im-gonna-rock-you-tonight-3.txt" />
+    <None Include="Assets\SongTextFiles\tonight-im-gonna-rock-you-tonight-4.txt" />
+    <None Include="Assets\SongTextFiles\trippin-on-a-hole-in-a-paper-heart-1.txt" />
+    <None Include="Assets\SongTextFiles\trippin-on-a-hole-in-a-paper-heart-2.txt" />
+    <None Include="Assets\SongTextFiles\trippin-on-a-hole-in-a-paper-heart-3.txt" />
+    <None Include="Assets\SongTextFiles\trippin-on-a-hole-in-a-paper-heart-4.txt" />
+    <None Include="Assets\SongTextFiles\trippolette-1.txt" />
+    <None Include="Assets\SongTextFiles\trippolette-2.txt" />
+    <None Include="Assets\SongTextFiles\trippolette-3.txt" />
+    <None Include="Assets\SongTextFiles\trippolette-4.txt" />
+    <None Include="Assets\SongTextFiles\trogdor-1.txt" />
+    <None Include="Assets\SongTextFiles\trogdor-2.txt" />
+    <None Include="Assets\SongTextFiles\trogdor-3.txt" />
+    <None Include="Assets\SongTextFiles\trogdor-4.txt" />
+    <None Include="Assets\SongTextFiles\unsung-1.txt" />
+    <None Include="Assets\SongTextFiles\unsung-2.txt" />
+    <None Include="Assets\SongTextFiles\unsung-3.txt" />
+    <None Include="Assets\SongTextFiles\unsung-4.txt" />
+    <None Include="Assets\SongTextFiles\war-pigs-1.txt" />
+    <None Include="Assets\SongTextFiles\war-pigs-2.txt" />
+    <None Include="Assets\SongTextFiles\war-pigs-3.txt" />
+    <None Include="Assets\SongTextFiles\war-pigs-4.txt" />
+    <None Include="Assets\SongTextFiles\who-was-in-my-room-last-night-1.txt" />
+    <None Include="Assets\SongTextFiles\who-was-in-my-room-last-night-2.txt" />
+    <None Include="Assets\SongTextFiles\who-was-in-my-room-last-night-3.txt" />
+    <None Include="Assets\SongTextFiles\who-was-in-my-room-last-night-4.txt" />
+    <None Include="Assets\SongTextFiles\woman-1.txt" />
+    <None Include="Assets\SongTextFiles\woman-2.txt" />
+    <None Include="Assets\SongTextFiles\woman-3.txt" />
+    <None Include="Assets\SongTextFiles\woman-4.txt" />
+    <None Include="Assets\SongTextFiles\x-stream-1.txt" />
+    <None Include="Assets\SongTextFiles\x-stream-2.txt" />
+    <None Include="Assets\SongTextFiles\x-stream-3.txt" />
+    <None Include="Assets\SongTextFiles\x-stream-4.txt" />
+    <None Include="Assets\SongTextFiles\yes-we-can-1.txt" />
+    <None Include="Assets\SongTextFiles\yes-we-can-2.txt" />
+    <None Include="Assets\SongTextFiles\yes-we-can-3.txt" />
+    <None Include="Assets\SongTextFiles\yes-we-can-4.txt" />
+    <None Include="Assets\SongTextFiles\you-got-another-thing-comin-1.txt" />
+    <None Include="Assets\SongTextFiles\you-got-another-thing-comin-2.txt" />
+    <None Include="Assets\SongTextFiles\you-got-another-thing-comin-3.txt" />
+    <None Include="Assets\SongTextFiles\you-got-another-thing-comin-4.txt" />
+    <None Include="Assets\SongTextFiles\you-really-got-me-1.txt" />
+    <None Include="Assets\SongTextFiles\you-really-got-me-2.txt" />
+    <None Include="Assets\SongTextFiles\you-really-got-me-3.txt" />
+    <None Include="Assets\SongTextFiles\you-really-got-me-4.txt" />
+    <None Include="Assets\SongTextFiles\yyz-1.txt" />
+    <None Include="Assets\SongTextFiles\yyz-2.txt" />
+    <None Include="Assets\SongTextFiles\yyz-3.txt" />
+    <None Include="Assets\SongTextFiles\yyz-4.txt" />
+    <None Include="Assets\SongTextFiles\ziggy-stardust-1.txt" />
+    <None Include="Assets\SongTextFiles\ziggy-stardust-2.txt" />
+    <None Include="Assets\SongTextFiles\ziggy-stardust-3.txt" />
+    <None Include="Assets\SongTextFiles\ziggy-stardust-4.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
+</Project>
