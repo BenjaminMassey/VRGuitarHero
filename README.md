@@ -28,10 +28,6 @@ Here's a shorter video more focused on straight gameplay:
 
 https://www.youtube.com/watch?v=YWxToXRfNtQ
 
-## Python Code
-
-In order to get mappings for the songs, I took the charts from here: http://www.purplefrog.com/~thoth/guitar-hero/ I then wrote Python Code to parse these SVG files into more useable text files. All of that code is included in the Python folder.
-
 ## Credits
 
 All of the coding, unity work, organization and game design was done by Ben Massey.
